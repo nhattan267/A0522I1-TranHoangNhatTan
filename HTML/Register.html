@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="Register.css">
 </head>
-<body>
-$END$
+
+<body bgcolor="#f5f5dc">
+<form>
+    <div class="form" align="center">
+        <div class="Heading">
+           <h2>ĐĂNG KÍ HỌC VIÊN</h2>
+        </div>
+    </div>
+
+    <table align="center">
+        <tr>
+            <td style="color: blue">Họ và Tên:</td>
+            <td><input type="name" name="fullname" size="25" ></td>
+        </tr>
+
+        <tr>
+            <td style="color: blue">Ngày sinh:</td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td style="color: blue">Giới Tính: </td>
+            <td><input type="radio" name="gioitinh">Nam
+                <input type="radio" name="gioitinh">Nữ</td>
+        </tr>
+
+        <tr>
+            <td style="color: blue">Địa chỉ: </td>
+            <td><textarea name="info" rows="5" cols="30">
+                </textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="color: blue">Lớp: </td>
+            <td><select name="class" style="width:100px">
+                <option>-Chọn Lớp-</option>
+                <option>Lớp A1</option>
+                <option>Lớp you</option>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+
+    </table>
+</form>
+
 </body>
 </html>
