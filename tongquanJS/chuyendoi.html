@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currenty</th>
+        </tr>
+        <tr>
+            <th><input type="text" id="dauvao"></th>
+            <th>
+                <select name="" id="truonghop1" style="max-width:300%; ">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+                </select>
+            </th>
+            <th width="200px"><select name="" id="truonghop2">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </select>
+            </th>
+            <th>
+                <button onclick="chuyendoi()">Covert</button>
+            </th>
+        </tr>
+        <script>
+            function chuyendoi() {
+                let giatri=document.getElementById("dauvao").value;
+                let truonghop1=document.getElementById("truonghop1").value;
+                let truonghop2=document.getElementById("truonghop2").value;
+
+                if (truonghop1 == truonghop2){
+                    alert(giatri);
+                }
+                if(truonghop1 == "vnd" && truonghop2 == "usd" ){
+                    alert(giatri/24000);
+                }
+                if(truonghop1 == "usd" && truonghop2 == "vnd"){
+                    alert(giatri*24000);
+                }
+
+            }
+        </script>
+    </table>
+
+</form>
+
+</body>
+</html>
