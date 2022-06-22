@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phuong trinh bac 2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap a: "));
+    let b = parseInt(prompt("nhap b: "));
+    let c = parseInt(prompt("nhap c: "));
+    var d = (b * b) - (4 * a * c)
+
+    if (a == 0){
+        if(b==0){
+            if (c == 0){
+                alert("ta ca la nghiem cua x");
+            }
+            else {
+                alert("pt vo nghiem");
+            }
+        }
+        else {
+            alert("x ="+ (-c/b));
+        }
+    }
+    else if (d>=0){
+        alert("x1 = "+ ((-b + Math.sqrt(d))/ (2*a)));
+        alert("x2 = "+ ((-b + -Math.sqrt(d))/ (2*a)));
+    }else {
+        alert("pt vo nghiem");
+    }
+
+
+</script>
+
+</body>
+</html>

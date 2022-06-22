@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt("nhap diem bai ktra 15ph: "));
+    let b =parseInt(prompt("nhap diem bai ktra 60ph: "));
+    let c =parseInt(prompt("nhap diem thi giua ki: "));
+    let d =parseInt(prompt("nhap diem cuoi ki: "));
+    let dtb=(Number(a)+Number(b)+Number(c)+Number(d))/4;
+    if (dtb>8){
+        alert(dtb+" hoc sinh gioi");
+    }else if(dtb>6.5){
+        alert(dtb+" Hoc sinh kha");
+    }else if(dtb>4){
+        alert(dtb+" Hoc sinh trung binh");
+    }else {
+        alert(dtb+" hoc sinh kem");
+    }
+</script>
+</body>
+</html>
