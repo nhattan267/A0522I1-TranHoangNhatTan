@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("nhap: "))
+    var n1 = 0;
+    var n2 = 1;
+    var Fibonnaci = n1+n2;
+    for(var i = 1;i < n ; i++){
+        Fibonnaci = n1 + n2;
+        n1=n2;
+        n2=Fibonnaci;
+        }
+    for (var j = 1; j < Fibonnaci; j++) {
+        if (j % 5 == 0) {
+            document.writeln("so dau tien la: "+j);
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>

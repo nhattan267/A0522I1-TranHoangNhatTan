@@ -6,12 +6,12 @@
 </head>
 <body>
 <script>
-    let i = 0;
-    while (i < 3) {
-        alert("hi");
-        i++;
+    let n = parseInt(prompt("nhap n: "));
+    let count = 1;
+    for (let i = 1; i <= n; i++){
+        count *= i;
     }
-
+    document.write(count)
 </script>
 
 </body>

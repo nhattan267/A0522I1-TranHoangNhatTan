@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var count = 0;
+    var value = 1;
+    var sum = 0;
+    while (true){
+        if(value % 7 ===0){
+            sum += value;
+            count ++;
+            document.write(value);
+        }
+        if (count === 30){
+            break;
+        }
+        value++;
+    }
+    document.write(" sum: " + sum);
+</script>
+
+</body>
+</html>
